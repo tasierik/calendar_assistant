@@ -1,0 +1,16 @@
+.rbc-off-range-bg {
+    background-color: #525364 !important;
+    color: white;
+}
+.rbc-today {
+    background-color: #606067 !important;
+    color: white;
+}
+.rbc-overlay {
+    background-color: #525364;
+
+}
+.rbc-event {
+    min-height: 20px !important; /* Reduce the minimum height */
+    padding: 2px 5px !important; /* Reduce padding to save space */
+}

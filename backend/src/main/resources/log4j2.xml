@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="120">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{1.} %msg - %X%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="hu.mt.dps" level="debug"/>
+        <Logger name="org.springframework.data.mongodb" level="debug"/>
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

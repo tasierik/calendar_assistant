@@ -1,0 +1,49 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+  profiles:
+    active: nonprod
+  application:
+    name: bookingassistant-backend
+  main:
+    banner-mode: "off"
+  data:
+    mongodb:
+      uri: mongodb://terminator:HD54AAS@localhost:27017/calendar_assistant
+      auto-index-creation: true
+server:
+  port: 8000
+  tomcat:
+    max-threads: 400
+    max-connections: 400
+    accept-count: 40
+management:
+  server:
+    port: 9000
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  trace:
+    http:
+      enabled: true
+concurrency:
+  default:
+    executor:
+      queue:
+        capacity: 40
+      pool:
+        size:
+          core: 50
+          max: 80
+
+calendar:
+  maxBookingSize: 100
+  maxRoomNumber: 5
+
