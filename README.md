@@ -25,14 +25,14 @@ Ensure the following are installed before proceeding with the setup:
 docker-compose up -d
 ```
 ### Backend Server
-To start the backend server, navigate to the backend folder and execute the following command:
+To start the backend server, navigate to the `backend` folder and execute the following command:
 
 ```bash
 ./gradlew bootRun
 ```
 
 ### Frontend Application
-For the frontend part, move to the frontend folder and run the following commands to install dependencies, build, and start the React application:
+For the frontend part, move to the `frontend` folder and run the following commands to install dependencies, build, and start the React application:
 
 ```bash
 npm install
